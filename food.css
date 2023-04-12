@@ -1,0 +1,234 @@
+
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header {
+    background-color: #77C14B; 
+    color: #fff; 
+    padding: 20px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* nav */
+/* Navigation links */
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-right: 10px;
+    position: relative;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
+
+/* Hover animation */
+.nav-links li::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transform-origin: bottom;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-links li:hover::after {
+    transform: scaleX(1);
+}
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #77C14B; /* Coral color for header background */
+    color: #fff; /* White text color for header */
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.recipe-card{
+    margin-top: 2%;
+}
+.card {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #F8F4E3;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.card-content {
+    position: relative;
+}
+
+.card-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block; 
+    margin: 0 auto; 
+}
+
+
+
+
+.card-content {
+    background-color: #F8F4E3;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin: 5%;
+}
+
+.card-title {
+    font-size: 24px;
+    color: #333;
+    margin-top: 0;
+}
+
+.card-description {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.ingredient-title,
+.preparation-title {
+    font-size: 18px;
+    color: #555;
+    margin-top: 0;
+}
+
+.ingredient-list,
+.preparation-list {
+    font-size: 16px;
+    color: #777;
+    margin-top: 0;
+    padding-left: 20px;
+}
+
+.ingredient-list li,
+.preparation-list li {
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .card-title {
+        font-size: 20px;
+    }
+
+    .card-description,
+    .ingredient-title,
+    .preparation-title,
+    .ingredient-list,
+    .preparation-list {
+        font-size: 14px;
+    }
+
+    .card-content {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .ingredient-list,
+    .preparation-list {
+        padding-left: 10px;
+    }
+    .card {
+        display: flex;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 32px;
+    }
+
+    .card-image {
+        flex-shrink: 0;
+        width: 200px;
+        height: auto;
+    }
+
+    .card-content {
+        margin-left: 24px;
+    }
+}
+
+.footer {
+    background-color: #353535; /* Dark gray color for footer background */
+    color: #fff; /* White color for footer text */
+    padding: 20px;
+    text-align: center;
+}
+
+.footer a {
+    color: #77C14B; /* Coral color for footer links */
+}
+
+
+/* footer */
+footer {
+    background-color: #77C14B; /* Coral color for footer background */
+    color: #fff; /* White text color for footer */
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    flex-shrink: 0; /* Prevent footer from shrinking */
+}
+
+.logo {
+    font-family: "Your Custom Font", cursive;
+    font-size: 24px;
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
