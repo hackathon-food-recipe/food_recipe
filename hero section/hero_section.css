@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+}
+
+div a {
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    border: 2px solid black;
+    color: black;
+}
+
+div a:hover {
+    color: white;
+    background-color: #77C14B;
+}
